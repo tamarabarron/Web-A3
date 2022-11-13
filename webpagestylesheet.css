@@ -1,0 +1,295 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(32, 35, 48);
+}
+
+p {
+    font-family: 'Montserrat', sans-serif
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif
+}
+
+/*-----ANIMATION FOR ART DECO TITLE-----*/
+#artdecoparent {
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 200px 0px 0px 0px;
+}
+
+#artdecoanimation {
+    align-items: center;
+}
+
+#artdecotitle {
+ align-items: center;
+ animation: fill 1s ease forwards 3.5s;
+ margin: 150px 0px;
+}
+
+#artdecotitle path:nth-child(1){
+    stroke-dasharray:  946.45px;
+    stroke-dashoffset:  946.45px;
+    animation: line-anim 2s ease forwards;
+}
+
+#artdecotitle path:nth-child(2){
+    stroke-dasharray:  1068.44px;
+    stroke-dashoffset: 1068.44px;
+    animation: line-anim 2s ease forwards 0.3s;
+}
+
+#artdecotitle path:nth-child(3){
+    stroke-dasharray:  725px;
+    stroke-dashoffset: 725px;
+    animation: line-anim 2s ease forwards 0.6s;
+}
+
+#artdecotitle path:nth-child(4){
+    stroke-dasharray:  1076.32px;
+    stroke-dashoffset: 1076.32px;
+    animation: line-anim 2s ease forwards 0.9s;
+}
+
+#artdecotitle path:nth-child(5){
+    stroke-dasharray:  893.5px;
+    stroke-dashoffset: 893.5px;
+    animation: line-anim 2s ease forwards 1.2s;
+}
+
+#artdecotitle path:nth-child(6){
+    stroke-dasharray:  712.27px;
+    stroke-dashoffset: 712.27px;
+    animation: line-anim 2s ease forwards 1.5s;
+}
+
+#artdecotitle path:nth-child(7){
+    stroke-dasharray:  1415.34px;
+    stroke-dashoffset: 1415.34px;
+    animation: line-anim 2s ease forwards 1.8s;
+}
+
+@keyframes line-anim {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    from {
+        fill:transparent;
+    }
+    to {
+        fill: white;
+    }
+}
+
+@keyframes fadein {
+    from {
+        color:rgb(32, 35, 48);
+    }
+    to {
+        color: white;
+    }
+}
+/*-----STYLING ART DECO IMAGE FLIP THINGS*/
+.flipcontainer {
+    text-align: center;
+    padding: 100px;
+}
+
+.artdecoimagecontainer {
+    height: 350px;
+    width: 350px;
+    background-color: yellow;
+    align-items: center;
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+}
+
+.artdecoimagecontainer img {
+    width: 100%;
+    height: 100%;
+}
+
+/*-----STYLING FOR ARTDECO INFORMATION BOXES-----*/
+sl-details {
+    font-family: 'Montserrat', sans-serif
+}
+
+.infoarea {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 0px;
+    margin: 0px 50px;
+}
+
+.artdecoinfo {
+    padding: 10px;
+    text-align: center;
+    width: 49%;
+    margin: 0px 100px;
+}
+
+.artdecoinfo h3 {
+    color: white;
+    text-align: center;
+}
+
+.artdecodropdown::part(header){
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.othertext p {
+    align-items: center;
+    text-align: center;
+    color:  rgb(32, 35, 48);
+    padding: 120px;
+    animation: fadein 3s ease alternate 3s;
+    animation-iteration-count: infinite;
+}
+
+/*Slideshow Gallery*/
+
+.imagesection {
+    padding: 200px 100px 0px 100px;
+}
+
+.slidingimagecontainer {
+    display: block;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    padding: 0px 100px;
+}
+
+.mySlides {
+    display:none;
+}
+
+/*next and previous buttonzz*/
+.prev , .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    color: white;
+}
+
+/*positioning next button to the right*/
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/*hover effect - background colour slightly transparent*/
+.prev:hover , .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/*caption styling*/
+.captiontext {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif
+}
+
+/*numbered text styling*/
+.numbertext {
+    color: white;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    font-family: 'Montserrat', sans-serif
+}
+
+/*dots, bullets, indicators*/
+.dot {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    margin: 0 20px;
+    background-color: gold;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot p {
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif
+}
+
+.active , .dot:hover {
+    background-color: #717171;
+}
+
+/*fading animation*/
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+
+/*image comparer*/
+.imagecomparer {
+    display: block;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.imagecomparercontainer img {
+    height: 1000px;
+    width: 100%;
+}
+
+.imagecomparerheading {
+    width: 100%;
+    padding: 50px;
+}
+
+.imagecomparerheading h1 {
+    color: white;
+    font-size: 48px;
+}
+
+@media screen and (max-width: 1200px) {
+    #artdecotitle {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .imagecomparercontainer img {
+        height: 100px;
+        width: 100%;
+    }
+}

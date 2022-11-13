@@ -1,0 +1,186 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8" /> 
+        <title>Art Deco</title>
+
+        <Link rel="stylesheet" href="webpagestylesheet.css">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/themes/light.css" />
+            
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+                    
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/shoelace.js"></script>
+    </head>
+
+<body>
+
+    <section id="artdecoparent" class="layeredsection">
+        <div id="artdecoanimation">
+            <svg id="artdecotitle"
+            width="1104" height="269" viewBox="0 0 1104 269" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M83.3066 3.99997H81.5566L5.55664 259H43.0566L54.8066 216H111.807L123.807 259H161.307L83.3066 3.99997ZM63.3066 185.75L83.3066 113.25L103.557 185.75H63.3066Z" stroke="white" stroke-width="8"/>
+                <path d="M276.951 71C276.951 36.75 249.201 9 214.951 9H176.201V259H211.201V133H214.951C217.451 133 219.701 133 221.951 132.75L250.201 259H284.451L250.951 121.5C267.451 109.5 276.951 91.5 276.951 71ZM214.951 98H211.201V44H214.951C229.951 44 241.951 56.25 241.951 71C241.951 86 229.951 98 214.951 98Z" stroke="white" stroke-width="8"/>
+                <path d="M284.6 44H323.35V259H358.35V44H397.1V9H284.6V44Z" stroke="white" stroke-width="8"/>
+                <path d="M509.619 9H492.119V259.25H509.619C581.119 259.25 624.369 200.5 624.369 134C624.369 67.5 580.869 9 509.619 9ZM527.119 222.5V45.75C564.619 54 589.369 88 589.369 134C589.369 180.25 564.619 214.25 527.119 222.5Z" stroke="white" stroke-width="8"/>
+                <path d="M641.777 259H736.527V224H676.777V120.75H719.027V90.75H676.777V44H736.527V9H641.777V259Z" stroke="white" stroke-width="8"/>
+                <path d="M849.137 39V3.99997C779.137 3.99997 741.387 71.5 741.387 134.25C741.387 197 779.637 264.25 849.137 264.25V229.25C799.887 229.25 776.387 176.75 776.387 134.25C776.387 91.5 799.887 39 849.137 39Z" stroke="white" stroke-width="8"/>
+                <path d="M969.287 3.99997C897.037 3.99997 839.287 62.75 839.287 134C839.287 206.5 897.787 264.25 969.287 264.25C1041.79 264.25 1099.54 205.5 1099.54 134C1099.54 62.75 1041.54 3.99997 969.287 3.99997ZM969.287 229.25C916.787 229.25 874.287 186.5 874.287 134C874.287 81.75 916.787 39 969.287 39C1021.79 39 1064.54 81.75 1064.54 134C1064.54 186.5 1021.79 229.25 969.287 229.25Z" stroke="white" stroke-width="8"/>
+                </svg>
+
+            <div class="othertext">
+                <p>scroll to find out more</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class ="infoarea">
+            <div class ="artdecoinfo" id = "aboutartdeco">
+                    <sl-details summary="About" class="artdecodropdown">
+                        Art Deco is a design movement that was highly influential. It provided modern ideas on design, and showed how it could be implemented across many fields - such as poster design, architecture, and interior design.
+                    </sl-details>
+            </div>
+            <div class ="artdecoinfo" id = "characteristicsartdeco">
+                <sl-details summary="Characteristics" class="artdecodropdown">
+                    <li>'Speed' lines</li>
+                    <li>Bold Colours</li>
+                    <li>Limited Colour Palette</li>
+                    <li>Elegance</li>
+                </sl-details>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class = "flipcontainer">
+            <div class="artdecoimagecontainer">
+                <img src="images/artdecoarchitectureplacecard.png" 
+                alt="Art Deco Architecture"
+                id="artdecoarchitectureplacecard">
+            </div>
+
+            <div class="artdecoimagecontainer">
+                <img src="images/artdecodesignerplacecard.png" 
+                alt="Art Deco Designer - AM Cassandre"
+                id="artdecodesignerplacecard">
+            </div>
+
+            <div class="artdecoimagecontainer">
+                <img src="images/artdecoposterplacecards.png" 
+                alt="Art Deco Poster"
+                id="artdecoposterplacecard">
+            </div>
+        </div>
+    </section>
+
+
+    <section class ="imagesection">
+        <!--container for slideshow-->
+        <div class="slidingimagecontainer">
+
+            <!--full images with number and caption text-->
+            <!--Image 1-->
+            <div class ="mySlides fade">
+                <div class ="numbertext">
+                    1 / 3
+                </div>
+
+                <img src="images/4.jpg" 
+                alt="Art Deco Fashion"
+                style = "width: 100%;">
+
+                <div class = "captiontext"> Art Deco Dress </div>
+            </div>
+
+            <!--Image 2-->
+            <div class ="mySlides fade">
+                <div class ="numbertext">
+                    2 / 3
+                </div>
+
+                <img src="images/5.jpg" 
+                alt="Art Deco Designer Rene Lalique"
+                style = "width: 100%;">
+
+                <div class = "captiontext"> René Lalique Designer </div>
+            </div>
+            
+             <!--Image 3-->
+            <div class ="mySlides fade">
+                <div class ="numbertext">
+                    3 / 3
+                </div>
+
+                <img src="images/6.jpg" 
+                alt="Art Deco Interior Design"
+                style = "width: 100%;">
+
+                <div class = "captiontext"> Art Deco Interior Design </div>
+            </div>
+
+            <!--Next and Previous Buttons-->
+            <a class ="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class ="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <br>
+
+        <!--dots and circles-->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"><p>1</p></span>
+            <span class="dot" onclick="currentSlide(2)"><p>2</p></span>
+            <span class="dot" onclick="currentSlide(3)"><p>3</p></span>
+        </div>
+    </section>
+
+    <section class ="imagecomparer">
+        <div class = "imagecomparerheading">
+            <h1>Art Deco VS Art Noveau</h1>
+        </div>
+
+        <div class ="imagecomparercontainer">
+            <sl-image-comparer>
+                <img
+                slot="before"
+                src="images/artdeco1.jpg"
+                alt="Art Deco Vibrant Yellow Poster"
+                />
+                <img
+                slot="after"
+                src="images/artnovposter.jpg"
+                alt="Art Novueau Poster"
+                />
+            </sl-image-comparer>
+        </div>
+    </section>
+
+    <!--GSAP ScrollTrigger Plugin-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+
+    <!--Custom ScriptS-->
+    <script src="script.js"></script>
+
+</div>
+
+</body>
+</html>
+
+<!--WEBSITE REFERENCES
+    Letter Animation:
+    developedbyed. 2019. "SVG Animation with Text Tutorial | HTML CSS". Youtube.
+    https://www.youtube.com/watch?v=vJNVramny9k
+
+    FlipCard JS:
+    #SmartCode. 2022. "Change Image On Click + Image Toggle | JavaScript Project For Students | #SmartCode". Youtube.
+    https://www.youtube.com/watch?v=ydeQbbF9jbw
+
+    Slideshow:
+    W3Schoolds. 2022. "How TO - Slideshow." W3Schools.com
+    https://www.w3schools.com/howto/howto_js_slideshow.asp 
+
+    GSAP Layered Pinning:
+    GreenSock. N.D. "Layered pinning - ScrollTrigger." Codepen. 
+    https://codepen.io/GreenSock/pen/KKpLdWW 
+-->
